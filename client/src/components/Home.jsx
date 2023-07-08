@@ -67,6 +67,7 @@ const Home = () => {
             sx={{
               width: 1100,
               mx: "auto",
+              marginTop:"10px"
             }}
             display={"flex"}
             justifyContent={"flex-start"}
@@ -81,21 +82,6 @@ const Home = () => {
               <Typography>
                * Please provide basic column names in Employee Excel Data : name,salary,status, where status have entries either active or inactive, 
                  please keep these basic entries in lowercase
-              </Typography>
-              <Typography>
-               * Once file is uploaded it will give a preview of excel data.
-              </Typography>
-              <Typography>
-               * Upload buttons upload the table preview to database.
-              </Typography>
-              <Typography>
-               * Once Excel Data is uploaded window will navigate to master preview where all the uploaded tables are displayed,
-                 click on particular row to view table.
-              </Typography>
-              <Typography>
-               * Table preview will occur, this is provided with functionalities:
-                 to add new row, edit particular row, delete particular row, delete entire table,analyze table data
-                 using graph & piechart feature of chart.js.
               </Typography>
             </Stack>
           </Box>

@@ -80,7 +80,15 @@ const Analyse = () => {
         <Fragment>
           <h3>Total Employees: {data.length}</h3>
           <h3>Active Employees: {getActiveEmployeesCount()}</h3>
-
+          <Button
+            variant="outlined"
+            color="secondary"
+            size="medium"
+            onClick={() => navigateMaster()}
+          >
+            View All Tables
+            <ListIcon />
+          </Button>
           <div style={{ width: "400px", margin: "auto" }}>
             <Line
               data={getBarChartData()}
@@ -97,15 +105,6 @@ const Analyse = () => {
           <div style={{ width: "400px", margin: "auto" }}>
             <Doughnut data={getPieChartData()} />
           </div>
-          <Button
-            variant="outlined"
-            color="secondary"
-            size="medium"
-            onClick={() => navigateMaster()}
-          >
-            View All Tables
-            <ListIcon />
-          </Button>
         </Fragment>
       )}
     </Fragment>

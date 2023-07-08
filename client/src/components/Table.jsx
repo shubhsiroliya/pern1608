@@ -49,6 +49,10 @@ const TableData = () => {
     columns = Object.keys(data[0]).map((item) => item);
   }
 
+  const navigateAnalyze=()=>{
+    navigate(`/analyzetable/${id}`);
+  }
+
   const deleteEntireTable = async () => {
     setTabledeleted(true);
     await dispatch(deleteTable(id));
